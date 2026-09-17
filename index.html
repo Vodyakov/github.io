@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои Браузерные Программы</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #121214;
+            color: #e1e1e6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        p.subtitle {
+            color: #a8a8b3;
+            font-size: 1.1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 900px;
+        }
+        .card {
+            background-color: #202024;
+            border: 1px solid #323238;
+            border-radius: 8px;
+            padding: 24px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: #00875f;
+            background-color: #29292e;
+        }
+        .card h2 {
+            font-size: 1.3rem;
+            color: #00b37e;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #c4c4cc;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+        .btn-label {
+            align-self: flex-start;
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #00b37e;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Веб-утилиты и программы</h1>
+        <p class="subtitle">Каталог автономных браузерных инструментов</p>
+    </header>
+
+    <main class="grid">
+        
+        <!-- Карточка программы 1 -->
+        <a href="./app1/index.html" class="card">
+            <div>
+                <h2>Программа 1</h2>
+                <p>Краткое описание того, что делает эта утилита или инструмент.</p>
+            </div>
+            <span class="btn-label">Открыть &rarr;</span>
+        </a>
+
+        <!-- Карточка программы 2 -->
+        <a href="./app2/index.html" class="card">
+            <div>
+                <h2>Программа 2</h2>
+                <p>Описание второй программы, расчетов или вспомогательного скрипта.</p>
+            </div>
+            <span class="btn-label">Открыть &rarr;</span>
+        </a>
+
+    </main>
+
+</body>
+</html>
